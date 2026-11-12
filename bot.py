@@ -1,17 +1,3 @@
-import discord
-from discord.ext import commands, tasks
-import os
-from dotenv import load_dotenv
-from datetime import datetime
-import asyncio
-
-load_dotenv()
-
-TOKEN = os.getenv("DISCORD_TOKEN")
-
-intents = discord.Intents.default()
-intents.message_content = True
-intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
